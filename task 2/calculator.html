@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>calculator</title>
+	<style type="text/css">
+		table{
+			font-size: 20px;
+			color: whitesmoke;
+			
+		}
+		tr td{
+			border: 2px solid;
+		}
+		td{
+			height: 50px;
+			text-align: center;
+			width: 80px;
+			background: black;
+			color: whitesmoke;
+		}
+		.dis{
+			max-width: 347px;
+			min-height: 50px;
+			min-width: auto;
+			border: 1px solid;
+			text-align: left;
+			font-size: 20px;
+			background: darkkhaki;
+		}
+	</style>
+</head>
+<body>
+	<table>	
+	<tr>
+		<div class="dis">
+			<div id="display">
+			</div>
+			<div id="result"></div>
+		</div>
+	</tr>
+	<tr>
+		<td id="clr" class="clr" onclick="cancel()" onmouseover="hover(0)" onmouseout="mouseOut(0)">AC</td>
+		<td class="spl" onclick="display('/')" onmouseover="hover(1)" onmouseout="mouseOut(1)">/</td>
+		<td class="spl" onclick="display('%')" onmouseover="hover(2)" onmouseout="mouseOut(2)">%</td>
+		<td class="spl" onclick="display('+')" onmouseover="hover(3)" onmouseout="mouseOut(3)">+</td>
+	</tr>
+	<tr>
+		<td onclick="display('1')" onmouseover="hover(4)" onmouseout="mouseOut(4)">1</td>
+		<td onclick="display('2')" onmouseover="hover(5)" onmouseout="mouseOut(5)">2</td>
+		<td onclick="display('3')" onmouseover="hover(6)" onmouseout="mouseOut(6)">3</td>
+		<td class="spl" onclick="display('-')" onmouseover="hover(7)" onmouseout="mouseOut(7)">-</td>
+	</tr>
+	<tr>
+		<td onclick="display('4')" onmouseover="hover(8)" onmouseout="mouseOut(8)" >4</td>
+		<td onclick="display('5')" onmouseover="hover(9)" onmouseout="mouseOut(9)">5</td>
+		<td onclick="display('6')" onmouseover="hover(10)" onmouseout="mouseOut(10)">6</td>
+		<td class="spl" onclick="display('*')"  onmouseover="hover(11)" onmouseout="mouseOut(11)">x</td>
+	</tr>
+	<tr>
+		<td onclick="display('7')" onmouseover="hover(12)" onmouseout="mouseOut(12)">7</td>
+		<td onclick="display('8')" onmouseover="hover(13)" onmouseout="mouseOut(13)">8</td>
+		<td onclick="display('9')" onmouseover="hover(14)" onmouseout="mouseOut(14)">9</td>
+		<td class="spl1" onclick="calculate()" rowspan="2" onmouseover="hover(15)" onmouseout="mouseOut(15)">=</td>
+	</tr>
+	<tr>
+		<td onclick="display('0')" onmouseover="hover(16)" onmouseout="mouseOut(16)">0</td>
+		<td onclick="display('00')" onmouseover="hover(17)" onmouseout="mouseOut(17)">00</td>
+		<td onclick="display('.')" onmouseover="hover(18)" onmouseout="mouseOut(18)">.</td>
+		
+	</tr>
+	</table>
+	<script type="text/javascript" src="calci.js"></script>
+</body>
+</html>
